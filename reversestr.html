@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reverse string</title>
+    <style>
+        div{
+            width:30%;
+            text-align: center;
+            background-color: rgb(146, 137, 137);
+        }
+        p{
+            padding-top:15px;
+        }
+        button{
+            margin:15px;
+            background-color: burlywood
+        }
+    </style>
+</head>
+<body>    
+    <div class="container">
+        <p>Enter the string to be reversed:</p>
+        <input type="text" id="input"><br>
+        <button onclick=reverseString()>Reverse</button>
+    </div>
+    <script>
+    //str is the parameter of the function
+        function reverseString(){
+        //split() is to split the string,reverse() is to reverse the string and join() is to join the resulted string.
+            var str=document.getElementById('input').value
+            console.log(str.split("").reverse().join(""))
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
